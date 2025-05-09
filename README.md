@@ -1,6 +1,13 @@
 # Lectioo
 
-Lectioo est une application macOS moderne et ludique, pensée pour les collégiens, qui transforme n'importe quel texte en audio grâce à l'API TTS d'OpenAI. Elle permet aussi de générer des podcasts de révisions dynamiques à partir de vos cours ou leçons.
+Z
+Lectioo est une application macOS qui transforme tes cours en audio et podcasts de révision grâce à l’IA !
+
+> **Information importante :** Lectioo est un projet en full **vibe coding**, la qualité du code n'est donc pas forcément au rendez-vous.
+> 
+> L'objectif ici etait uniquement de créer une application fonctionnelle en une après-midi pour l'un de mes fils.
+
+![Lectioo](./illustration.jpg)
 
 ## ✨ Fonctionnalités principales
 
