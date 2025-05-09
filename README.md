@@ -1,6 +1,5 @@
 # Lectioo
 
-Z
 Lectioo est une application macOS qui transforme tes cours en audio et podcasts de révision grâce à l’IA !
 
 > **Information importante :** Lectioo est un projet en full **vibe coding**, la qualité du code n'est donc pas forcément au rendez-vous.
