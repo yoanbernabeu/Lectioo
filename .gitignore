@@ -1,0 +1,13 @@
+# Dépendances et build
+node_modules/
+dist/
+
+# Dossiers de données et audio générés
+audio/
+data/
+
+# Fichiers système et temporaires
+.DS_Store
+*.log
+npm-debug.log*
+.env 

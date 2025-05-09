@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=900, initial-scale=1.0">
+  <title>Lectioo – Cours à écouter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Onboarding clé API -->
+  <div id="onboarding-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Bienvenue sur Lectioo !</h2>
+      <p>Pour transformer tes textes en audio, ajoute ta clé API OpenAI :</p>
+      <input type="password" id="api-key-input" placeholder="Clé API OpenAI">
+      <button id="save-api-key">Enregistrer</button>
+      <p class="modal-note">Ta clé reste privée sur ton ordinateur.</p>
+    </div>
+  </div>
+
+  <!-- Modal d'attente génération -->
+  <div id="wait-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="wait-title">Génération en cours…</h2>
+      <div id="wait-message">Merci de patienter, la génération est en cours.</div>
+      <progress id="wait-progress" value="0" max="100"></progress>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Menu latéral historique -->
+    <aside id="sidebar">
+      <!-- <div class="app-title">Lectioo</div> -->
+      <button id="new-text-btn">+ Nouveau texte</button>
+      <h3>Historique</h3>
+      <ul id="history-list">
+        <!-- Les entrées de l'historique seront injectées ici -->
+      </ul>
+    </aside>
+
+    <!-- Zone centrale principale -->
+    <main>
+      <h1>Lectioo</h1>
+      <textarea id="text-input" placeholder="Colle ici ton cours, ta leçon ou ta récitation..."></textarea>
+      <button id="convert-btn">Générer l'audio</button>
+      <button id="podcast-btn">Générer un podcast de révisions</button>
+      <progress id="progress-bar" class="hidden" value="0" max="100"></progress>
+      <div id="lecture-container" class="hidden">
+        <div class="lecture-header">
+          <span id="lecture-icon"></span>
+          <span id="lecture-type"></span>
+          <span id="lecture-date"></span>
+        </div>
+        <h2 id="lecture-title"></h2>
+        <audio id="lecture-audio" controls></audio>
+        <div id="lecture-text" class="text-display"></div>
+      </div>
+      <div id="message"></div>
+    </main>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
