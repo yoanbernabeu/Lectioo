@@ -10,6 +10,20 @@ Lectioo est une application macOS moderne et ludique, pensée pour les collégie
 - **Interface épurée** : Design moderne, accessible, adapté au contexte scolaire.
 - **Gestion de la clé API OpenAI** : Stockée localement, jamais transmise à l'extérieur.
 
+## 📦 Installation
+
+1. **Téléchargez le fichier `.dmg`** depuis la [dernière release GitHub](https://github.com/yoanbernabeu/Lectioo/releases).
+2. **Ouvrez le DMG** et glissez l'application `lectioo.app` dans le dossier `Applications`.
+3. **Important :** Comme l'application n'est pas signée (certificat Apple), macOS peut afficher un message d'erreur du type « L'application est endommagée et ne peut pas être ouverte ».
+   
+   Pour corriger cela, ouvrez le Terminal et exécutez la commande suivante :
+   
+   ```sh
+   xattr -dr com.apple.quarantine /Applications/lectioo.app
+   ```
+   
+   Cela supprime l'attribut de quarantaine ajouté par macOS et permet d'ouvrir l'application normalement.
+
 ## 🚀 Installation & Lancement (développement)
 
 1. **Cloner le dépôt**
