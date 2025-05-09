@@ -42,11 +42,7 @@ Lectioo est une application macOS moderne et ludique, pensée pour les collégie
 
 ## 🛠️ Build pour macOS
 
-1. **Installer les dépendances de build** (si besoin)
-   ```bash
-   npm install --save-dev electron-builder
-   ```
-2. **Lancer le build**
+1. **Lancer le build**
    ```bash
    npm run build
    ```
